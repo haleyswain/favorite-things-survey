@@ -19,24 +19,45 @@
           <input id="question1" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="question2">What is your favorite color?</label>
-          <input id="question2" class="form-control" type="text">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
         </div>
-        <div class="form-group">
-          <label for="question3">What is your favorite food?</label>
-          <input id="question3" class="form-control" type="text">
+          <label for="food">What is your favorite food?</label>
+          <select class="form-control" id="food">
+            <option>Mexican</option>
+            <option>Italian</option>
+            <option>Thai</option>
+            <option>Indian</option>
+        </select>
         </div>
         <div class="form-group">
           <label for="question4">What is your favorite animal?</label>
-          <input id="question4" class="form-control" type="text">
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="lion" checked>
+              Lion
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="tiger" checked>
+              Tiger
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="bear" checked>
+              Bear
+            </label>
+          </div>
         </div>
 
         <button type="submit" class="btn">Survey says!</button>
       </form>
     </div>
     <div id="results">
-      <h1>Here is a little bit about you.</h1>
-      <p><span class="question1"></span> favorite color is <span class="question2"></span> and they enjoy eating <span class="question3"></span> food.  Their favorite animal is a <span class="question4"></span>.</p>
+      <h1><center>Here is a little bit about you.</center></h1>
+      <p><center><span class="question1"></span>'s favorite color is <span class="color"></span> and they enjoy eating <span class="food"></span> food.  Their favorite animal is a <span class="question4"></span>.</center></p>
     </div>
   </div>
   </body>

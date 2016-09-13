@@ -1,14 +1,14 @@
 $(document).ready(function() {
   $("#survey form").submit(function(event) {
     var question1Input = $("input#question1").val();
-    var question2Input = $("input#question2").val();
-    var question3Input = $("input#question3").val();
-    var question4Input = $("input#question4").val();
+    var color = $("#color").val();
+    var food = $("#food").val();
+    var question4 = $("input:radio[name=question4]:checked").val();
 
     $(".question1").text(question1Input);
-    $(".question2").text(question2Input);
-    $(".question3").text(question3Input);
-    $(".question4").text(question4Input);
+    $(".color").text(color);
+    $(".food").text(food);
+    $(".question4").text(question4);
 
     $("#survey").show();
     $("#results").show();
